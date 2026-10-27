@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement Prep | Skill Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">Prep<span>Wise</span></a>
+    <nav>
+      <a class="active" href="index.html">Dashboard</a>
+      <a href="skill-gap.html">Skill Analyzer</a>
+      <a href="tracker.html">Preparation Tracker</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">YOUR PLACEMENT JOURNEY</p>
+        <h1>Prepare with a plan.</h1>
+        <p class="muted">Compare your skills with job requirements and track your preparation in one place.</p>
+      </div>
+      <a class="button" href="skill-gap.html">Analyze my skills →</a>
+    </section>
+
+    <section class="stats">
+      <article class="stat-card">
+        <p>Tasks completed</p>
+        <h2 id="completed-count">0</h2>
+        <span>Keep building consistency</span>
+      </article>
+      <article class="stat-card">
+        <p>Total tasks</p>
+        <h2 id="total-count">0</h2>
+        <span>Your current preparation list</span>
+      </article>
+      <article class="stat-card">
+        <p>Overall progress</p>
+        <h2 id="progress-percent">0%</h2>
+        <div class="progress-track"><div id="progress-bar" class="progress-fill"></div></div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">GET STARTED</p>
+          <h2>Your next steps</h2>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card" href="skill-gap.html">
+          <div class="feature-icon">⌕</div>
+          <h3>Skill Gap Analyzer</h3>
+          <p>Compare your current skills with a job's required skills and identify what to learn next.</p>
+          <span class="text-link">Analyze skills →</span>
+        </a>
+        <a class="feature-card" href="tracker.html">
+          <div class="feature-icon">✓</div>
+          <h3>Preparation Tracker</h3>
+          <p>Add topics, mark completed tasks, and monitor your preparation progress.</p>
+          <span class="text-link">Track preparation →</span>
+        </a>
+      </div>
+    </section>
+    <p class="footnote">Demo version: progress is saved in this browser using local storage.</p>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

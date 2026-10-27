@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preparation Tracker | PrepWise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">Prep<span>Wise</span></a>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="skill-gap.html">Skill Analyzer</a>
+      <a class="active" href="tracker.html">Preparation Tracker</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <section class="page-heading">
+      <p class="eyebrow">DAILY CONSISTENCY</p>
+      <h1>Track your preparation.</h1>
+      <p class="muted">Add a topic or task, then mark it complete when you finish it.</p>
+    </section>
+
+    <section class="panel">
+      <form id="task-form" class="task-form">
+        <div class="field-grow">
+          <label for="task-name">Topic or task</label>
+          <input id="task-name" type="text" maxlength="100" placeholder="Example: Python functions" required>
+        </div>
+        <div>
+          <label for="task-category">Category</label>
+          <select id="task-category">
+            <option>Python</option>
+            <option>DSA</option>
+            <option>DBMS</option>
+            <option>Aptitude</option>
+            <option>Projects</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button class="button" type="submit">Add task</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="list-header">
+        <div>
+          <p class="eyebrow">YOUR TASKS</p>
+          <h2>Preparation checklist</h2>
+        </div>
+        <button id="clear-completed" class="button button-light" type="button">Clear completed</button>
+      </div>
+      <div id="task-list" class="task-list"></div>
+      <p id="empty-state" class="empty-state">No tasks yet. Add your first preparation task above.</p>
+    </section>
+  </main>
+  <script src="tracker.js"></script>
+</body>
+</html>
